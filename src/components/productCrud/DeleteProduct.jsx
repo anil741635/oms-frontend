@@ -14,7 +14,7 @@ function DeleteProduct(){
         .catch(err=>console.log(err))
     }
     return(
-        <div className="form-box">
+        <div className="form-box delete">
             <h2>delete product</h2>
             <input type="number" name="id" placeholder="id" onChange={(e)=>setId(e.target.value)}></input>
             <br></br>

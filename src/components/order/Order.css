@@ -1,58 +1,135 @@
-
-
-.container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    font-family: Arial, sans-serif;
+/* Background */
+body{
+    margin:0;
+    padding:30px;
+    background:#eef2f7;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.form-box {
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    width: 400px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+/* Main Card */
+.form-box{
+    width:650px;
+    margin:40px auto;
+    background:#ffffff;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
 
-input {
-    padding: 8px;
-    margin: 5px;
-    width: 250px;
+/* Heading */
+.form-box h2{
+    margin-top:0;
+    text-align:center;
+    background:#1565c0;
+    color:white;
+    padding:15px;
+    border-radius:8px;
 }
 
-button {
-    padding: 8px 15px;
-    margin: 5px;
-    cursor: pointer;
+/* Input */
+.form-box input,
+.form-box select{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+    box-sizing:border-box;
 }
 
-button:hover {
-    background-color: lightblue;
+/* Input Focus */
+.form-box input:focus,
+.form-box select:focus{
+    outline:none;
+    border:1px solid #1565c0;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+/* Buttons */
+.form-box button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#1976d2;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
 }
 
-th,
-td {
-    border: 1px solid black;
-    padding: 10px;
+.form-box button:hover{
+    background:#0d47a1;
 }
 
-th {
-    background-color: lightgray;
+/* Search Result */
+.form-box p{
+    background:#e3f2fd;
+    padding:10px;
+    border-left:5px solid #1565c0;
+    border-radius:5px;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
 }
 
-h1,
-h2 {
-    color: #333;
+table th{
+    background:#1565c0;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    padding:10px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+table tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+table tr:hover{
+    background:#e3f2fd;
+}
+
+/* Different Colors For Different Modules */
+
+/* Customer */
+.customer{
+    border-top:8px solid #1976d2;
+}
+
+/* Product */
+.product{
+    border-top:8px solid #2e7d32;
+}
+
+/* Orders */
+.order{
+    border-top:8px solid #ef6c00;
+}
+
+/* Order Items */
+.orderitem{
+    border-top:8px solid #8e24aa;
+}
+
+/* Delete */
+.delete{
+    border-top:8px solid #d32f2f;
+}
+
+/* Responsive */
+@media(max-width:700px){
+
+.form-box{
+    width:95%;
+}
+
 }

@@ -34,7 +34,7 @@ function OrderList(){
                     <p>customer_id:{order.customer?.id}</p>
                     </div>
             )}
-            <h2>get all orders</h2>
+           
             <button onClick={fetchOrders}>get all orders</button>
             <table border="1">
                 <thead>

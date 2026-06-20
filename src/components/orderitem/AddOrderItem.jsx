@@ -53,7 +53,7 @@ function AddOrderItem() {
     };
 
     return (
-        <div className="form-box">
+        <div className="form-box orderitem">
             <h2>Add Order Item</h2>
             <input type="number" name="quantity" placeholder="Quantity"
                 onChange={handleChange}/>

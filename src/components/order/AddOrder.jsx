@@ -35,7 +35,7 @@ function AddOrder(){
         .catch(error=>console.log(error.message))
     }
     return(
-        <div className="form-box">
+        <div className="form-box order">
             <h2>add order</h2>
             <input type="number" name="totalAmount" placeholder="total amount" 
             onChange={handleChange}></input>

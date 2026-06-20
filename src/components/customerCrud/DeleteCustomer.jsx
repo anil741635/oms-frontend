@@ -10,7 +10,7 @@ function DeleteCustomer(){
         .then(()=> alert("customer deleted successfully"));
     };
     return(
-        <div className="form-box">
+        <div className="form-box delete">
             <h2>delete customer by id</h2>
             <input type="number" placeholder="id" onChange={(e)=>setId(e.target.value)}></input>
             <button onClick={deleteCustomer}>delete customer</button>

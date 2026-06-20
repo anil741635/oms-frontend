@@ -26,7 +26,7 @@ function AddProduct(){
         })
     }
     return(
-        <div className="form-box">
+        <div className="form-box product">
             <h2>add product</h2>
             <input name="name" placeholder="product name" onChange={handleChange}></input>
             <br>

@@ -31,7 +31,6 @@ function OrderItemList(){
                     <p>product id:{orderItem.product?.id}</p>
                     </div>
             )}
-            <h2>get all orderItems</h2>
             <button onClick={fetchOrderItmes}>get all orderItems</button>
             <table border="1">
                 <thead>

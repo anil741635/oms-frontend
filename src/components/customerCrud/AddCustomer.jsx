@@ -9,7 +9,6 @@ function AddCustomer(){
     });
     const handleChange=(e)=>{
         setCustomer({...customer,[e.target.name]:e.target.value
-
         });
     };
     const saveCustomer=()=>{
@@ -27,7 +26,7 @@ function AddCustomer(){
         })
     };
     return (
-        <div className="form-box">
+        <div className="form-box customer">
             <h2>add customer</h2>
             <input name="name" 
             placeholder="enter customer name"
